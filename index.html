@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hotel Club Rancho Los Olivos | Cabañas, Hotel, Piscinas & Toboganes | Huaquén, La Ligua</title>
+  <meta name="description" content="Centro turístico familiar en Los Hornos de Huaquén, La Ligua. Cabañas rústicas, habitaciones de hotel, parque de toboganes acuáticos, piscinas al aire libre, piscina temperada techada y paseos por el día con quinchos.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rancho: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            aqua: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            },
+            warm: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Outfit"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom adjustments for mobile touch & smoothness */
+    .tap-highlight-transparent { -webkit-tap-highlight-color: transparent; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0.85) 100%);
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased pb-20 md:pb-0">
+
+  <!-- TOP BAR AVISO / CONTACTO -->
+  <div class="bg-rancho-900 text-white text-xs py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium">Abierto todo el año · Los Hornos de Huaquén, Km 13, La Ligua</span>
+      </div>
+      <div class="flex items-center gap-4 text-emerald-200">
+        <a href="tel:+56937024764" class="hover:text-white flex items-center gap-1">
+          <i data-lucide="phone" class="w-3 h-3"></i> +56 9 3702 4764
+        </a>
+        <span>|</span>
+        <span class="flex items-center gap-1 text-amber-300 font-medium">
+          <i data-lucide="sun" class="w-3.5 h-3.5"></i> Pase Diario 10:00 - 19:30 hrs
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo & Nombre -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-rancho-700 to-emerald-500 flex items-center justify-center text-white shadow-md shadow-rancho-700/20">
+          <i data-lucide="palmtree" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="block font-display font-black text-lg md:text-xl text-slate-900 tracking-tight leading-none">
+            RANCHO LOS OLIVOS
+          </span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-700">
+            Hotel Club &bull; Cabañas &bull; Parque Acuático
+          </span>
+        </div>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-600">
+        <a href="#piscinas" class="hover:text-rancho-700 transition">Piscinas & Toboganes</a>
+        <a href="#temperada" class="hover:text-rancho-700 transition flex items-center gap-1">
+          <span class="w-2 h-2 rounded-full bg-cyan-500"></span> Piscina Temperada
+        </a>
+        <a href="#alojamiento" class="hover:text-rancho-700 transition">Hotel & Cabañas</a>
+        <a href="#pasediario" class="hover:text-rancho-700 transition">Pase Diario (Full Day)</a>
+        <a href="#cotizador" class="hover:text-rancho-700 transition">Cotizador</a>
+        <a href="#ubicacion" class="hover:text-rancho-700 transition">Cómo Llegar</a>
+      </nav>
+
+      <!-- Botón WhatsApp Desktop -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/56937024764?text=Hola%20Rancho%20Los%20Olivos,%20quisiera%20consultar%20disponibilidad%20y%20tarifas" 
+           target="_blank" 
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs md:text-sm px-4 py-2.5 rounded-full shadow-md shadow-emerald-600/25 transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Consultar por WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Botón Móvil Menú -->
+      <button id="btn-mobile-menu" class="p-2 text-slate-600 hover:text-slate-900 lg:hidden">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 py-4 space-y-3 text-sm font-medium text-slate-700 shadow-xl">
+      <a href="#piscinas" class="block py-2 border-b border-slate-50 flex items-center justify-between">
+        <span>Piscinas & Toboganes</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="#temperada" class="block py-2 border-b border-slate-50 flex items-center justify-between text-cyan-700 font-semibold">
+        <span>♨️ Piscina Temperada Techada</span> <i data-lucide="chevron-right" class="w-4 h-4 text-cyan-400"></i>
+      </a>
+      <a href="#alojamiento" class="block py-2 border-b border-slate-50 flex items-center justify-between">
+        <span>Cabañas & Habitaciones de Hotel</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="#pasediario" class="block py-2 border-b border-slate-50 flex items-center justify-between">
+        <span>Pase Diario (Paseo por el Día)</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <a href="#cotizador" class="block py-2 border-b border-slate-50 flex items-center justify-between text-emerald-700 font-bold">
+        <span>⚡ Cotizador en Vivo Móvil</span> <i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i>
+      </a>
+      <a href="#ubicacion" class="block py-2 flex items-center justify-between">
+        <span>Ubicación en Huaquén</span> <i data-lucide="map-pin" class="w-4 h-4 text-slate-400"></i>
+      </a>
+      <div class="pt-2">
+        <a href="https://wa.me/56937024764?text=Hola%20Rancho%20Los%20Olivos,%20quisiera%20consultar%20disponibilidad" target="_blank"
+           class="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white font-bold py-3 rounded-xl shadow-md text-sm">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Contactar al WhatsApp (+56 9 3702 4764)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION CON FOTOS REALES DE RESORT CAMPESINO -->
+  <section class="relative min-h-[580px] md:min-h-[640px] flex items-center text-white overflow-hidden">
+    <!-- Imagen de Fondo Hero -->
+    <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1600&q=80" 
+         alt="Piscinas y Resort Rancho Los Olivos" 
+         class="absolute inset-0 w-full h-full object-cover object-center transform scale-105 duration-1000 ease-out">
+    
+    <!-- Filtro oscuro con gradiente para legibilidad perfecta -->
+    <div class="absolute inset-0 hero-gradient"></div>
+
+    <div class="relative max-w-6xl mx-auto px-4 py-12 md:py-20 w-full">
+      <div class="max-w-2xl">
+        <!-- Badge Ubicación -->
+        <div class="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/40 text-emerald-300 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-4 badge-glow">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-emerald-300"></i>
+          <span>Los Hornos de Huaquén · La Ligua, V Región</span>
+        </div>
+
+        <!-- Título Principal -->
+        <h1 class="font-display font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-none mb-4">
+          Tu Escape Campestre Todo el Año
+        </h1>
+
+        <!-- Bajada -->
+        <p class="text-slate-200 text-base md:text-lg mb-8 leading-relaxed font-normal">
+          Disfruta de amplias <strong class="text-white font-semibold">piscinas con toboganes acuáticos</strong>, una exclusiva <strong class="text-cyan-300 font-semibold">piscina temperada techada a 32°C</strong>, cómodas cabañas, habitaciones de hotel y <strong class="text-amber-300 font-semibold">paseos por el día con quinchos familiares</strong>.
+        </p>
+
+        <!-- Botones de Acción -->
+        <div class="flex flex-col sm:flex-row gap-3.5 mb-10">
+          <a href="#cotizador" 
+             class="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm md:text-base px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-500/30 transition transform hover:-translate-y-0.5">
+            <i data-lucide="calculator" class="w-5 h-5"></i>
+            <span>Cotizar Pase o Estadía</span>
+          </a>
+          <a href="https://wa.me/56937024764?text=Hola,%20quisiera%20consultar%20por%20Pase%20Diario%20y%20Caba%C3%B1as%20en%20Rancho%20Los%20Olivos" target="_blank"
+             class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-sm md:text-base px-6 py-3.5 rounded-xl transition">
+            <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+            <span>WhatsApp Directo</span>
+          </a>
+        </div>
+
+        <!-- Mini Puntos Clave en Móvil -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-4 border-t border-white/15 text-xs text-slate-300">
+          <div class="flex items-center gap-2">
+            <i data-lucide="waves" class="w-4 h-4 text-cyan-400 flex-shrink-0"></i>
+            <span>Piscinas Recreativas</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="zap" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+            <span>Toboganes de Agua</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="thermometer-snowflake" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+            <span>Piscina Temperada Techada</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="home" class="w-4 h-4 text-orange-400 flex-shrink-0"></i>
+            <span>Hotel & Cabañas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE SERVICIOS RÁPIDOS / PILARES -->
+  <section class="relative -mt-6 z-20 max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      
+      <!-- Card 1: Piscinas & Toboganes -->
+      <a href="#piscinas" class="glass-card p-4 rounded-2xl border border-slate-200/80 shadow-md hover:shadow-lg transition group block">
+        <div class="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-3 group-hover:bg-cyan-600 group-hover:text-white transition">
+          <i data-lucide="waves" class="w-5 h-5"></i>
+        </div>
+        <h2 class="font-display font-bold text-slate-900 text-sm md:text-base leading-snug">Parque Acuático</h2>
+        <p class="text-xs text-slate-500 mt-1">Piscinas exteriores y toboganes gigantes para toda la familia.</p>
+      </a>
+
+      <!-- Card 2: Piscina Temperada -->
+      <a href="#temperada" class="glass-card p-4 rounded-2xl border border-emerald-200 shadow-md hover:shadow-lg transition group block bg-gradient-to-b from-emerald-50/60 to-white">
+        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+          <i data-lucide="flame" class="w-5 h-5"></i>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <h2 class="font-display font-bold text-emerald-900 text-sm md:text-base leading-snug">Piscina Temperada</h2>
+          <span class="text-[9px] bg-emerald-600 text-white font-bold px-1.5 py-0.5 rounded-full">32°C</span>
+        </div>
+        <p class="text-xs text-slate-500 mt-1">Techada, con hidromasaje y ambiente spa todo el año.</p>
+      </a>
+
+      <!-- Card 3: Hotel & Cabañas -->
+      <a href="#alojamiento" class="glass-card p-4 rounded-2xl border border-slate-200/80 shadow-md hover:shadow-lg transition group block">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-3 group-hover:bg-amber-600 group-hover:text-white transition">
+          <i data-lucide="home" class="w-5 h-5"></i>
+        </div>
+        <h2 class="font-display font-bold text-slate-900 text-sm md:text-base leading-snug">Hotel & Cabañas</h2>
+        <p class="text-xs text-slate-500 mt-1">Cabañas rústicas equipadas y habitaciones de hotel club.</p>
+      </a>
+
+      <!-- Card 4: Pase Diario & Quinchos -->
+      <a href="#pasediario" class="glass-card p-4 rounded-2xl border border-slate-200/80 shadow-md hover:shadow-lg transition group block">
+        <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center mb-3 group-hover:bg-orange-600 group-hover:text-white transition">
+          <i data-lucide="utensils" class="w-5 h-5"></i>
+        </div>
+        <h2 class="font-display font-bold text-slate-900 text-sm md:text-base leading-snug">Pase Diario Full</h2>
+        <p class="text-xs text-slate-500 mt-1">Paseo por el día con parrillas, áreas verdes y canchas.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: PISCINAS AL AIRE LIBRE & TOBOGANES ACUÁTICOS -->
+  <section id="piscinas" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs uppercase font-extrabold tracking-widest text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full border border-cyan-200">
+        Diversión & Refrescancia al Sol
+      </span>
+      <h2 class="font-display font-black text-2xl md:text-4xl text-slate-900 mt-3 tracking-tight">
+        Piscinas Recreativas & Toboganes
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-2">
+        El lugar perfecto para escapar del calor en el valle de Huaquén. Espacios diseñados para grandes y chicos en un entorno campestre rodeado de naturaleza.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Galería / Foto Toboganes -->
+      <div class="relative rounded-3xl overflow-hidden shadow-xl group border border-slate-100">
+        <img src="https://images.unsplash.com/photo-1582610116397-edb318620f90?auto=format&fit=crop&w=1000&q=80" 
+             alt="Toboganes acuáticos y parque de agua en Rancho Los Olivos" 
+             class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 text-white">
+          <span class="inline-block bg-amber-500 text-slate-950 font-black text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-2">
+            Atracción Principal
+          </span>
+          <h3 class="font-display font-bold text-xl md:text-2xl">Toboganes Acuáticos para Toda la Familia</h3>
+          <p class="text-xs md:text-sm text-slate-200 mt-1">Lanza la diversión cuesta abajo directo a piscinas cristalinas bajo la atenta mirada de salvavidas capacitados.</p>
+        </div>
+      </div>
+
+      <!-- Detalles de las Piscinas Recreativas -->
+      <div class="space-y-6">
+        <div class="flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center flex-shrink-0 shadow-sm">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-lg">Gran Piscina Exterior Semiolímpica</h3>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+              Amplio espejo de agua con diferentes profundidades, perfecto tanto para quienes disfrutan nadar como para el juego familiar y el relajo en las tardes de verano.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 shadow-sm">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-lg">Zona Infantil & Piscina Baja</h3>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+              Espacio acuático de baja profundidad para niños pequeños, con mini-toboganes y juegos para que chapoteen con total seguridad y tranquilidad para los padres.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 shadow-sm">
+            <i data-lucide="sun" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-lg">Solarium con Reposeras & Áreas Verdes</h3>
+            <p class="text-slate-600 text-sm mt-1 leading-relaxed">
+              Zonas de césped natural y reposeras alrededor de las albercas para descansar bajo los quitasoles, leer un libro o disfrutar de un jugo natural.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Seguridad -->
+        <div class="bg-cyan-50/70 border border-cyan-100 rounded-2xl p-4 flex items-center gap-3 text-cyan-900 text-xs md:text-sm">
+          <i data-lucide="shield-check" class="w-5 h-5 text-cyan-600 flex-shrink-0"></i>
+          <span>Agua tratada con filtrado continuo de alta calidad y personal salvavidas certificado en temporada.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: PISCINA TEMPERADA TECHADA (EL SERVICIO ESTRELLA TODO EL AÑO) -->
+  <section id="temperada" class="py-16 bg-gradient-to-b from-emerald-900 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+    <!-- Luces decorativas de fondo -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Columna de Texto -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold">
+            <i data-lucide="flame" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>Climatizada a 32°C Constantes</span>
+          </div>
+
+          <h2 class="font-display font-black text-3xl md:text-4xl lg:text-5xl tracking-tight leading-tight">
+            Piscina Temperada Techada
+          </h2>
+
+          <p class="text-slate-300 text-base md:text-lg leading-relaxed font-light">
+            No importa si está nublado, es invierno o hace frío: en nuestra piscina techada siempre es verano. Un santuario de agua tibia para desconectar tensiones corporales y disfrutar en cualquier mes del año.
+          </p>
+
+          <!-- Beneficios -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm mb-1">
+                <i data-lucide="sparkles" class="w-4 h-4"></i> Hidromasaje & Burbujas
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">Chorros a presión para aliviar dolores de espalda y hombros.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm mb-1">
+                <i data-lucide="cloud-sun" class="w-4 h-4"></i> Ambiente Climatizado
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">Estructura cerrada con luz natural protegida de la intemperie.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-1">
+                <i data-lucide="heart" class="w-4 h-4"></i> Apta para Adulto Mayor & Niños
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">Acceso seguro con barandas e iluminación nocturna relajante.</p>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-emerald-300 font-bold text-sm mb-1">
+                <i data-lucide="calendar" class="w-4 h-4"></i> Disponible Todo el Año
+              </div>
+              <p class="text-xs text-slate-300 leading-normal">Ideal para escapadas de fin de semana largo y vacaciones de invierno.</p>
+            </div>
+          </div>
+
+          <!-- Botón de consulta -->
+          <div class="pt-4">
+            <a href="https://wa.me/56937024764?text=Hola,%20quisiera%20saber%20los%20horarios%20y%20tarifas%20de%20la%20Piscina%20Temperada%20Techada" 
+               target="_blank"
+               class="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-500/25 hover:from-emerald-600 hover:to-teal-600 transition text-sm">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span>Consultar Horarios de Piscina Temperada</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna de Foto -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+            <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Piscina temperada techada en Rancho Los Olivos" 
+                 class="w-full h-80 sm:h-96 lg:h-[460px] object-cover">
+            <div class="absolute bottom-4 left-4 right-4 bg-slate-900/85 backdrop-blur-md p-4 rounded-2xl border border-white/10 flex items-center justify-between">
+              <div>
+                <p class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Temperatura garantizada</p>
+                <p class="font-display font-bold text-lg text-white">32°C Agua Dulce Climatizada</p>
+              </div>
+              <span class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                ♨️
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: ALOJAMIENTO - HOTEL & CABAÑAS CAMPESTRES -->
+  <section id="alojamiento" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+        Descanso en Medio de la Naturaleza
+      </span>
+      <h2 class="font-display font-black text-2xl md:text-4xl text-slate-900 mt-3 tracking-tight">
+        Hotel Club & Cabañas Rústicas
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-2">
+        Elige la comodidad de una suite de hotel o la independencia de una cabaña totalmente equipada con quincho privado para tu familia.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Tarjeta 1: Cabaña Campestre Familiar -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-xl transition flex flex-col group">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80" 
+               alt="Cabaña de madera en Rancho Los Olivos" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-amber-300 font-bold text-xs px-3 py-1 rounded-full flex items-center gap-1">
+            <i data-lucide="users" class="w-3.5 h-3.5"></i> 4 a 6 Personas
+          </span>
+          <span class="absolute top-3 right-3 bg-emerald-600 text-white font-bold text-xs px-3 py-1 rounded-full">
+            Cabaña Privada
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Cabaña Familiar El Olivo</h3>
+            <p class="text-xs text-slate-500 mb-4 leading-relaxed">
+              Cabaña rústica de madera con 2 dormitorios, living comedor, cocina americana completa, terraza y parrilla privada.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Cocina equipada (refrigerador, encimera, vajilla)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Terraza techada con parrilla para asado</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Acceso libre a piscinas y áreas recreativas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Estacionamiento al lado de la cabaña</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 block font-medium">Tarifa por noche</span>
+              <span class="font-display font-black text-xl text-slate-900">Desde $75.000</span>
+            </div>
+            <a href="https://wa.me/56937024764?text=Hola,%20me%20interesa%20la%20Caba%C3%B1a%20Familiar%20El%20Olivo%20para%204-6%20personas" 
+               target="_blank"
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Habitaciones Hotel Club -->
+      <div class="bg-white rounded-3xl overflow-hidden border-2 border-emerald-500/40 shadow-lg hover:shadow-xl transition flex flex-col group relative">
+        <div class="absolute -top-1 right-6 bg-emerald-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-b-lg shadow-sm z-10">
+          Opción Parejas & Relax
+        </div>
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" 
+               alt="Habitación de hotel en Rancho Los Olivos" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-amber-300 font-bold text-xs px-3 py-1 rounded-full flex items-center gap-1">
+            <i data-lucide="users" class="w-3.5 h-3.5"></i> 2 a 3 Personas
+          </span>
+          <span class="absolute top-3 right-3 bg-cyan-700 text-white font-bold text-xs px-3 py-1 rounded-full">
+            Hotel Suite
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Suites Hotel Rancho</h3>
+            <p class="text-xs text-slate-500 mb-4 leading-relaxed">
+              Habitaciones climatizadas estilo campestre contemporáneo con baño en suite, sommier premium, smart TV y vista panorámica a los jardines.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Cama King / Queen con ropa de cama premium</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Baño privado con ducha de agua caliente permanente</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Desayuno campestre opcional</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Acceso directo a piscina y salón club</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 block font-medium">Tarifa por noche</span>
+              <span class="font-display font-black text-xl text-emerald-800">Desde $55.000</span>
+            </div>
+            <a href="https://wa.me/56937024764?text=Hola,%20me%20interesa%20la%20Suite%20Hotel%20Rancho%20para%202%20personas" 
+               target="_blank"
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Cabaña Grande Gran Grupo -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-xl transition flex flex-col group">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+               alt="Cabaña grande para grupos en Rancho Los Olivos" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-amber-300 font-bold text-xs px-3 py-1 rounded-full flex items-center gap-1">
+            <i data-lucide="users" class="w-3.5 h-3.5"></i> 8 a 12 Personas
+          </span>
+          <span class="absolute top-3 right-3 bg-orange-600 text-white font-bold text-xs px-3 py-1 rounded-full">
+            Gran Grupo
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-2">Cabaña Gran Rancho</h3>
+            <p class="text-xs text-slate-500 mb-4 leading-relaxed">
+              Nuestra cabaña más espaciosa: 3-4 dormitorios, 2 baños, gran salón comedor con estufa a leña, quincho gigante exclusivo y terraza panorámica.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Capacidad hasta 12 personas cómodas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>2 baños completos con agua caliente</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Quincho techado propio con gran mesón</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                <span>Estacionamiento múltiple privado</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 block font-medium">Tarifa por noche</span>
+              <span class="font-display font-black text-xl text-slate-900">Desde $130.000</span>
+            </div>
+            <a href="https://wa.me/56937024764?text=Hola,%20me%20interesa%20la%20Caba%C3%B1a%20Gran%20Rancho%20para%20grupos%20grandes" 
+               target="_blank"
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition">
+              Reservar
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: PASE DIARIO & EXPERIENCIAS DE DÍA COMPLETO -->
+  <section id="pasediario" class="py-16 bg-emerald-50/60 border-y border-emerald-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Imagen BBQ / Picnic -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border border-emerald-200 group">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" 
+                 alt="Asados y quinchos en Rancho Los Olivos" 
+                 class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="bg-amber-500 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md mb-1 inline-block">
+                ¡Trae tu asado!
+              </span>
+              <h3 class="font-display font-bold text-xl">Quinchos y Parrillas Campestres</h3>
+              <p class="text-xs text-slate-200 mt-1">Disfruta de un asado bajo la sombra de los árboles con tu familia o amigos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información Pase Diario -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-800 bg-white px-3 py-1 rounded-full border border-emerald-200 shadow-sm">
+            Experiencia Full Day
+          </span>
+          <h2 class="font-display font-black text-2xl md:text-4xl text-slate-900 tracking-tight">
+            Pase Diario: Ven a Pasar el Día
+          </h2>
+          <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+            No necesitas alojar para disfrutar de todas nuestras instalaciones. Ven con tu familia o grupo de amigos de 10:00 a 19:30 hrs y pasa un día inolvidable de piscina, asado y naturaleza.
+          </p>
+
+          <!-- Tabla de Qué Incluye el Pase -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-700">
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Acceso a piscinas exteriores y toboganes</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Derecho a parrilla y mesa de picnic</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Canchas de fútbol y juegos infantiles</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Estacionamiento interno seguro</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+              <span>Caminatas por senderos y laguna</span>
+            </div>
+            <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl border border-emerald-100 shadow-sm">
+              <i data-lucide="plus-circle" class="w-4 h-4 text-cyan-600 flex-shrink-0"></i>
+              <span>Opcional: Piscina Temperada Techada (+$3.000)</span>
+            </div>
+          </div>
+
+          <!-- Valores Pase Diario -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <div class="bg-white px-4 py-2.5 rounded-2xl border border-emerald-200 shadow-sm">
+              <span class="text-[11px] text-slate-500 uppercase block font-bold">Adultos</span>
+              <span class="font-display font-black text-xl text-emerald-700">$10.000 <span class="text-xs font-normal text-slate-500">/persona</span></span>
+            </div>
+            <div class="bg-white px-4 py-2.5 rounded-2xl border border-emerald-200 shadow-sm">
+              <span class="text-[11px] text-slate-500 uppercase block font-bold">Niños (4 a 10 años)</span>
+              <span class="font-display font-black text-xl text-emerald-700">$7.000 <span class="text-xs font-normal text-slate-500">/persona</span></span>
+            </div>
+            <div class="bg-white px-4 py-2.5 rounded-2xl border border-emerald-200 shadow-sm">
+              <span class="text-[11px] text-slate-500 uppercase block font-bold">Menores de 4 años</span>
+              <span class="font-display font-black text-xl text-emerald-700">GRATIS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: COTIZADOR INTERACTIVO EN VIVO PARA CELULARES -->
+  <section id="cotizador" class="py-16 max-w-4xl mx-auto px-4">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200/80">
+      
+      <div class="text-center max-w-lg mx-auto mb-8">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+          Simulador Rápido
+        </span>
+        <h2 class="font-display font-black text-2xl md:text-3xl text-slate-900 mt-2">
+          Calcula tu Visita o Estadía
+        </h2>
+        <p class="text-slate-500 text-xs md:text-sm mt-1">
+          Configura tus preferencias y cotiza inmediatamente con un clic al WhatsApp del Rancho.
+        </p>
+      </div>
+
+      <!-- Formulario Interactivo -->
+      <div class="space-y-6">
+
+        <!-- Selección Tipo de Servicio -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
+            1. Selecciona lo que deseas reservar:
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            <button type="button" onclick="setService('pase')" id="btn-srv-pase" 
+                    class="service-btn active p-3 rounded-2xl border-2 border-emerald-600 bg-emerald-50/80 text-left transition">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-slate-900 text-sm">Pase Diario</span>
+                <i data-lucide="sun" class="w-4 h-4 text-emerald-600"></i>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">Por el día (quinchos y piscinas)</p>
+            </button>
+
+            <button type="button" onclick="setService('cabana')" id="btn-srv-cabana" 
+                    class="service-btn p-3 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-slate-900 text-sm">Cabaña Equipada</span>
+                <i data-lucide="home" class="w-4 h-4 text-slate-400"></i>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">Desde $75.000 / noche (4-6p)</p>
+            </button>
+
+            <button type="button" onclick="setService('hotel')" id="btn-srv-hotel" 
+                    class="service-btn p-3 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition">
+              <div class="flex items-center justify-between">
+                <span class="font-display font-bold text-slate-900 text-sm">Suite Hotel</span>
+                <i data-lucide="bed" class="w-4 h-4 text-slate-400"></i>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5">Desde $55.000 / noche (2p)</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cantidad de Personas / Noches -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Adultos -->
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-700">Adultos:</span>
+              <span id="label-adultos" class="font-display font-black text-lg text-emerald-800">2</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <button onclick="changeQty('adultos', -1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">-</button>
+              <input type="range" id="range-adultos" min="1" max="15" value="2" oninput="updateRange('adultos', this.value)" class="flex-1 accent-emerald-600">
+              <button onclick="changeQty('adultos', 1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">+</button>
+            </div>
+          </div>
+
+          <!-- Niños -->
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-slate-700">Niños (4 a 10 años):</span>
+              <span id="label-ninos" class="font-display font-black text-lg text-emerald-800">1</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <button onclick="changeQty('ninos', -1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">-</button>
+              <input type="range" id="range-ninos" min="0" max="10" value="1" oninput="updateRange('ninos', this.value)" class="flex-1 accent-emerald-600">
+              <button onclick="changeQty('ninos', 1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selector Noches (Sólo visible si elige alojamiento) -->
+        <div id="wrapper-noches" class="hidden bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-slate-700">Cantidad de Noches:</span>
+            <span id="label-noches" class="font-display font-black text-lg text-emerald-800">1 Noche</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <button onclick="changeQty('noches', -1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">-</button>
+            <input type="range" id="range-noches" min="1" max="14" value="1" oninput="updateRange('noches', this.value)" class="flex-1 accent-emerald-600">
+            <button onclick="changeQty('noches', 1)" class="w-10 h-10 rounded-xl bg-white border border-slate-300 shadow-sm flex items-center justify-center font-bold text-slate-700 active:scale-95 text-lg">+</button>
+          </div>
+        </div>
+
+        <!-- Adicional: Piscina Temperada Techada -->
+        <div class="bg-cyan-50/70 p-4 rounded-2xl border border-cyan-200/80 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="chk-temperada" onchange="calculateTotal()" class="w-5 h-5 rounded text-cyan-600 accent-cyan-600">
+            <div>
+              <label for="chk-temperada" class="text-xs sm:text-sm font-bold text-slate-900 cursor-pointer flex items-center gap-1.5">
+                <span>♨️ Incluir Pase a Piscina Temperada Techada</span>
+              </label>
+              <p class="text-[11px] text-slate-500">Agua a 32°C con hidromasaje (+$3.000 por persona)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen del Total -->
+        <div class="bg-gradient-to-br from-rancho-900 to-slate-900 text-white p-6 rounded-3xl shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <span class="text-xs text-emerald-300 uppercase font-bold tracking-wider block">Cotización Estimada:</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="total-display" class="font-display font-black text-3xl sm:text-4xl text-white">$27.000</span>
+              <span class="text-xs text-slate-400">CLP aprox.</span>
+            </div>
+            <p id="total-summary" class="text-[11px] text-slate-300 mt-1">Pase Diario: 2 Adultos + 1 Niño</p>
+          </div>
+
+          <a id="btn-whatsapp-quote" href="#" target="_blank"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm md:text-base px-6 py-4 rounded-2xl shadow-lg shadow-emerald-500/30 transition transform active:scale-95">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Consultar Disponibilidad</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 6: PASEOS DE CURSO, EVENTOS & EMPRESAS -->
+  <section class="py-12 max-w-6xl mx-auto px-4">
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-6 md:p-10 border border-amber-200 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-2 max-w-xl">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+          Convenios Especiales
+        </span>
+        <h2 class="font-display font-bold text-2xl md:text-3xl text-slate-900">
+          ¿Paseo de Fin de Año, Colegios o Empresas?
+        </h2>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Ofrecemos valores preferenciales para grupos sobre 20 personas, con quincho exclusivo techado, uso prioritario de canchas deportivas y opciones con almuerzo incluido.
+        </p>
+      </div>
+      <a href="https://wa.me/56937024764?text=Hola,%20quisiera%20cotizar%20un%20paseo%20grupal%20/%20colegio%20/%20empresa%20en%20Rancho%20Los%20Olivos" target="_blank"
+         class="bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm px-6 py-3.5 rounded-2xl shadow-md transition flex items-center gap-2 whitespace-nowrap">
+        <i data-lucide="users" class="w-4 h-4"></i>
+        <span>Cotizar Grupo por WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 7: UBICACIÓN, ENTORNO & CÓMO LLEGAR -->
+  <section id="ubicacion" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs uppercase font-extrabold tracking-widest text-slate-600 bg-slate-200/70 px-3 py-1 rounded-full">
+        Fácil Acceso
+      </span>
+      <h2 class="font-display font-black text-2xl md:text-4xl text-slate-900 mt-3 tracking-tight">
+        Cómo Llegar a Rancho Los Olivos
+      </h2>
+      <p class="text-slate-600 text-sm md:text-base mt-2">
+        Ubicados en el apacible sector de Los Hornos de Huaquén, a minutos de la Ruta 5 Norte y muy cerca de las playas de Los Molles y Pichicuy.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Datos de Dirección -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-sm">Dirección Exacta</h3>
+            <p class="text-xs text-slate-600 mt-0.5">Ruta E-251, Kilómetro 13, Sector Los Hornos de Huaquén, Comuna de La Ligua, V Región de Valparaíso.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-sm">Distancias Clave</h3>
+            <p class="text-xs text-slate-600 mt-0.5">&bull; 15 min de Playa Los Molles</p>
+            <p class="text-xs text-slate-600">&bull; 15 min de Pichicuy</p>
+            <p class="text-xs text-slate-600">&bull; 25 min del centro de La Ligua</p>
+            <p class="text-xs text-slate-600">&bull; 2 hrs desde Santiago o Viña del Mar</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="clock" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-slate-900 text-sm">Horarios de Atención</h3>
+            <p class="text-xs text-slate-600 mt-0.5">Pase Diario: 10:00 a 19:30 hrs.</p>
+            <p class="text-xs text-slate-600">Check-in Alojamiento: 14:30 hrs.</p>
+            <p class="text-xs text-slate-600">Check-out Alojamiento: 12:00 hrs.</p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://maps.google.com/?q=Los+Hornos+de+Huaquen+La+Ligua" target="_blank"
+             class="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-3 rounded-xl transition">
+            <i data-lucide="navigation" class="w-4 h-4 text-emerald-400"></i>
+            <span>Abrir en Google Maps / Waze</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mapa o Representación Visual -->
+      <div class="lg:col-span-2 bg-slate-200 rounded-3xl overflow-hidden min-h-[300px] relative border border-slate-300">
+        <iframe 
+          title="Mapa Huaquén La Ligua" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107875.24151740922!2d-71.49257697479712!3d-32.32767098418706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689895c80dbb691%3A0xe6bf44b4eb640b33!2sHuaqu%C3%A9n%2C%20La%20Ligua%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1700000000000!5m2!1ses-419!2scl" 
+          width="100%" 
+          height="100%" 
+          style="border:0; min-height: 320px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES (FAQ) -->
+  <section class="py-12 bg-white border-t border-slate-150">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-display font-bold text-2xl text-slate-900 text-center mb-8">
+        Preguntas Frecuentes
+      </h2>
+
+      <div class="space-y-3">
+        <details class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 cursor-pointer group">
+          <summary class="font-semibold text-slate-800 text-sm flex items-center justify-between">
+            <span>¿Se puede llevar comida y bebidas para asado en el Pase Diario?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            ¡Sí! El recinto cuenta con quinchos y parrillas para que traigas tu carbón, carnes, ensaladas y refrescos. Solo se solicita mantener la limpieza y no ingresar botellas de vidrio al área de piscinas por seguridad.
+          </p>
+        </details>
+
+        <details class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 cursor-pointer group">
+          <summary class="font-semibold text-slate-800 text-sm flex items-center justify-between">
+            <span>¿La piscina temperada funciona en días nublados o de lluvia?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Sí, la piscina temperada es techada y mantiene su agua a 32°C de forma permanente. Funciona todo el año de martes a domingo y fines de semana largos.
+          </p>
+        </details>
+
+        <details class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 cursor-pointer group">
+          <summary class="font-semibold text-slate-800 text-sm flex items-center justify-between">
+            <span>¿Las cabañas incluyen toallas y sábanas?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Las cabañas y suites de hotel se entregan con sábanas y plumones limpios. Recomendamos traer toallas personales para el uso de las piscinas exteriores.
+          </p>
+        </details>
+
+        <details class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 cursor-pointer group">
+          <summary class="font-semibold text-slate-800 text-sm flex items-center justify-between">
+            <span>¿Se aceptan mascotas?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Se permiten mascotas de raza pequeña/mediana bajo tenencia responsable (con correa en áreas comunes). No está permitido su ingreso a los perímetros de piscina.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-10 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <span class="font-display font-black text-white text-base">HOTEL CLUB RANCHO LOS OLIVOS</span>
+        <p class="mt-1 text-slate-400">Los Hornos de Huaquén, Km 13 Ruta E-251, La Ligua, V Región.</p>
+        <p class="mt-0.5 text-slate-500">Teléfono & WhatsApp directo: +56 9 3702 4764</p>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="#piscinas" class="hover:text-white">Piscinas</a>
+        <a href="#temperada" class="hover:text-white">Piscina Temperada</a>
+        <a href="#alojamiento" class="hover:text-white">Cabañas</a>
+        <a href="#cotizador" class="hover:text-white">Cotizador</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800/60 text-center text-slate-500 text-[11px]">
+      Propuesta de diseño web profesional optimizada para celulares y conversión directa a WhatsApp.
+    </div>
+  </footer>
+
+  <!-- BARRA FIJA DE RESERVA INFERIOR PARA CELULARES (STICKY BOTTOM BAR) -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 md:hidden shadow-2xl flex items-center justify-between gap-3">
+    <div class="leading-tight">
+      <span class="block text-[10px] uppercase font-bold text-emerald-700 tracking-wider">Rancho Los Olivos</span>
+      <span class="font-display font-black text-slate-900 text-sm">Reserva o Consulta</span>
+    </div>
+    <a href="https://wa.me/56937024764?text=Hola%20Rancho%20Los%20Olivos,%20quisiera%20consultar%20por%20Pase%20Diario%20y%20Caba%C3%B1as" 
+       target="_blank"
+       class="flex-1 max-w-[210px] inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs py-3 px-4 rounded-xl shadow-md transition">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>Chatear WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- SCRIPT INTERACTIVO DEL COTIZADOR Y NAVEGACIÓN -->
+  <script>
+    // Inicializar Iconos Lucide
+    lucide.createIcons();
+
+    // Toggle Mobile Menu
+    const btnMobile = document.getElementById('btn-mobile-menu');
+    const drawerMobile = document.getElementById('mobile-menu-drawer');
+    if (btnMobile && drawerMobile) {
+      btnMobile.addEventListener('click', () => {
+        drawerMobile.classList.toggle('hidden');
+      });
+      // Cerrar al hacer clic en un link
+      drawerMobile.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => drawerMobile.classList.add('hidden'));
+      });
+    }
+
+    // Estado del Cotizador
+    let currentService = 'pase'; // 'pase' | 'cabana' | 'hotel'
+    let adultos = 2;
+    let ninos = 1;
+    let noches = 1;
+
+    function setService(srv) {
+      currentService = srv;
+      
+      // Actualizar estilos botones
+      ['pase', 'cabana', 'hotel'].forEach(id => {
+        const btn = document.getElementById('btn-srv-' + id);
+        if (id === srv) {
+          btn.className = "service-btn active p-3 rounded-2xl border-2 border-emerald-600 bg-emerald-50/80 text-left transition";
+        } else {
+          btn.className = "service-btn p-3 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 text-left transition";
+        }
+      });
+
+      // Mostrar/ocultar selector noches
+      const wrapNoches = document.getElementById('wrapper-noches');
+      if (srv === 'cabana' || srv === 'hotel') {
+        wrapNoches.classList.remove('hidden');
+      } else {
+        wrapNoches.classList.add('hidden');
+      }
+
+      calculateTotal();
+    }
+
+    function changeQty(type, delta) {
+      if (type === 'adultos') {
+        adultos = Math.max(1, Math.min(15, adultos + delta));
+        document.getElementById('range-adultos').value = adultos;
+        document.getElementById('label-adultos').innerText = adultos;
+      } else if (type === 'ninos') {
+        ninos = Math.max(0, Math.min(10, ninos + delta));
+        document.getElementById('range-ninos').value = ninos;
+        document.getElementById('label-ninos').innerText = ninos;
+      } else if (type === 'noches') {
+        noches = Math.max(1, Math.min(14, noches + delta));
+        document.getElementById('range-noches').value = noches;
+        document.getElementById('label-noches').innerText = noches + (noches === 1 ? ' Noche' : ' Noches');
+      }
+      calculateTotal();
+    }
+
+    function updateRange(type, val) {
+      val = parseInt(val, 10);
+      if (type === 'adultos') {
+        adultos = val;
+        document.getElementById('label-adultos').innerText = adultos;
+      } else if (type === 'ninos') {
+        ninos = val;
+        document.getElementById('label-ninos').innerText = ninos;
+      } else if (type === 'noches') {
+        noches = val;
+        document.getElementById('label-noches').innerText = noches + (noches === 1 ? ' Noche' : ' Noches');
+      }
+      calculateTotal();
+    }
+
+    function calculateTotal() {
+      const inclTemperada = document.getElementById('chk-temperada').checked;
+      let total = 0;
+      let summaryText = "";
+      let srvName = "";
+
+      if (currentService === 'pase') {
+        srvName = "Pase Diario (Full Day)";
+        const valorAdulto = 10000;
+        const valorNino = 7000;
+        total = (adultos * valorAdulto) + (ninos * valorNino);
+        summaryText = `Pase Diario: ${adultos} Adulto(s) + ${ninos} Niño(s)`;
+      } else if (currentService === 'cabana') {
+        srvName = "Cabaña Equipada";
+        const valorBase = 75000; // 4-6 personas base
+        total = valorBase * noches;
+        summaryText = `Cabaña: ${noches} Noche(s) para ${adultos} Adultos + ${ninos} Niños`;
+      } else if (currentService === 'hotel') {
+        srvName = "Suite Hotel Rancho";
+        const valorBase = 55000; // 2 personas
+        total = valorBase * noches;
+        summaryText = `Suite Hotel: ${noches} Noche(s) para ${adultos} Adultos`;
+      }
+
+      // Adicional Piscina temperada
+      if (inclTemperada) {
+        const extra = (adultos + ninos) * 3000;
+        total += extra;
+        summaryText += " + Pase Piscina Temperada";
+      }
+
+      // Formato CLP
+      const clp = "$" + total.toLocaleString('es-CL');
+      document.getElementById('total-display').innerText = clp;
+      document.getElementById('total-summary').innerText = summaryText;
+
+      // Actualizar enlace WhatsApp
+      const mensaje = `Hola Rancho Los Olivos! Quisiera consultar disponibilidad:%0A%0A` +
+        `• *Servicio:* ${srvName}%0A` +
+        `• *Personas:* ${adultos} Adulto(s) y ${ninos} Niño(s)%0A` +
+        (currentService !== 'pase' ? `• *Estadía:* ${noches} noche(s)%0A` : '') +
+        `• *Piscina Temperada Techada:* ${inclTemperada ? 'SÍ incluida' : 'No incluida'}%0A` +
+        `• *Total Estimado:* ${clp}%0A%0A` +
+        `¿Tienen fechas disponibles para este fin de semana o semana entrante?`;
+
+      document.getElementById('btn-whatsapp-quote').href = `https://wa.me/56937024764?text=${mensaje}`;
+    }
+
+    // Inicializar cálculo al cargar
+    calculateTotal();
+  </script>
+</body>
+</html>
